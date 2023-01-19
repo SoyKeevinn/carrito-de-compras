@@ -50,7 +50,7 @@ const fetchData = async () =>{
 //==========================================================
 const pintarCars = datos => {
     datos.forEach(productos => {
-        //console.log(productos);
+        console.log(productos);
         templateCard.querySelector('h5').textContent = productos.title
         //modifica el titulo
         templateCard.querySelector('p').textContent = productos.precio
