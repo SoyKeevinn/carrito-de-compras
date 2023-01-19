@@ -43,3 +43,22 @@
 .cuerpo-tarjeta{
     padding-left: 5px;
 }
+
+#items{
+    border: 1px;
+    
+    height: 10%;
+}
+
+.table{
+    text-align: center;
+    border: 1px solid;
+}
+
+.barra{
+    border: 1px;
+}
+
+.lleno{
+    border: 1px solid;
+}

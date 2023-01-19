@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,31 @@
     <link rel="stylesheet" href="estilos.css">
     <title>Carrito de Compras</title>
 </head>
+
 <body>
-    
+
     <div class="container">
         <h1>Compras</h1>
         <hr>
-        <div class="tarjetas" id="items"></div>
+        <div class="tarjetas" id="cards"></div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" >#</th>
+                    <th scope="col" >Item</th>
+                    <th scope="col" >Cantidad</th>
+                    <th scope="col" >Accion</th>
+                    <th scope="col" >Total</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+                <tr id="footer">
+                    <th scope="row" colspan="5" > Carrito Vacio</th>
+                </tr>
+            </tfoot>
+        </table>
+        
     </div>
 
     <template id="template-card">
@@ -27,6 +47,31 @@
             </div>
         </div>
     </template>
+
+    <template id="template-carrito">
+        <tr>
+            <td scope="row">id</td>
+            <td>Café</td>
+            <td>1</td>
+            <td>
+                <button class="btn-info" > + </button>
+                <button class="btn-danger"> - </button>
+            </td>
+            <td>$ <span>500</span></td>
+        </tr>
+    </template>
+
+    <template id="templagte-footer">
+        <th scope="row" colspan="2"> Total productos</th>
+        <td>10</td>
+        
+        <td>$ <span>5000</span></td>
+        <td>
+            <button id="vaciar-carrito"> Limpiar </button>
+        </td>
+    </template>
+
     <script src="app.js"></script>
 </body>
+
 </html>
